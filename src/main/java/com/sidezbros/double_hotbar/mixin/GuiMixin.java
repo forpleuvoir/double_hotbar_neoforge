@@ -93,6 +93,11 @@ public abstract class GuiMixin {
         return doubleHotbar$modifyYShift(getCameraPlayer(), y);
     }
 
+    @ModifyVariable(method = "renderExperienceLevel", at = @At(value = "STORE"), ordinal = 2)
+    public int doubleHotbar$modifyExperienceLevelY(int y) {
+        return doubleHotbar$modifyYShift(getCameraPlayer(), y);
+    }
+
     @ModifyVariable(method = "renderHealthLevel", at = @At(value = "STORE"), ordinal = 4)
     public int doubleHotbar$modifyHealthLevelY(int y) {
         return doubleHotbar$modifyYShift(getCameraPlayer(), y);

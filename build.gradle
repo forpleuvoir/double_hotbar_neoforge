@@ -11,6 +11,7 @@ group = mod_group_id
 repositories {
     mavenLocal()
     maven { url "https://maven.shedaniel.me/" }
+    maven { url "https://maven.ryanliptak.com/" }
 }
 
 base {
@@ -99,6 +100,7 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 dependencies {
     api "me.shedaniel.cloth:cloth-config-neoforge:15.0.140"
 
+    implementation "squeek.appleskin:appleskin-neoforge:mc1.21-3.0.7"
 //    // For depending on a Minecraft JAR-file with both client- and server-classes
 //    compileOnly "net.minecraft:neoform_joined:1.21.1-20240808.144430"
 }

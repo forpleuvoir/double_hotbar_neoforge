@@ -15,6 +15,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ClickType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
@@ -31,7 +32,7 @@ import java.time.Instant;
 @Mod(DoubleHotbar.MOD_ID)
 public class DoubleHotbar {
     public static final String MOD_ID = "double_hotbar";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     private static KeyMapping keyMapping;
     private final boolean[] hotbarKeys = new boolean[10];
