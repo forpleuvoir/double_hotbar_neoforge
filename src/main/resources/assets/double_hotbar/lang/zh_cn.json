@@ -1,0 +1,18 @@
+{
+  "category.double_hotbar.keybinds": "双层快捷栏 (Double Hotbar)",
+  "key.double_hotbar.swap": "切换快捷栏",
+  "subtitles.double_hotbar.woosh": "快捷栏切换音效",
+  "text.autoconfig.double_hotbar.option.disableMod": "禁用模组",
+  "text.autoconfig.double_hotbar.option.displayDoubleHotbar": "显示第二层快捷栏",
+  "text.autoconfig.double_hotbar.option.inventoryRow": "启用切换的物品栏列",
+  "text.autoconfig.double_hotbar.option.shift": "垂直位置",
+  "text.autoconfig.double_hotbar.option.allowDoubleTap": "启用双击",
+  "text.autoconfig.double_hotbar.option.doubleTapWindow": "双击时间（毫秒）",
+  "text.autoconfig.double_hotbar.option.holdToSwap": "启用长按切换",
+  "text.autoconfig.double_hotbar.option.holdTime": "长按切换时间（毫秒）",
+  "text.autoconfig.double_hotbar.option.renderCrop": "快捷栏高度裁剪（像素）",
+  "text.autoconfig.double_hotbar.option.holdToSwapBar": "长按切换整个快捷栏",
+  "text.autoconfig.double_hotbar.option.wooshVolume": "音效音量 (%)",
+  "text.autoconfig.double_hotbar.option.reverseBars": "主要快捷栏置顶",
+  "text.autoconfig.double_hotbar.title": "双层快捷栏设置"
+}
