@@ -1,5 +1,6 @@
 package com.sidezbros.double_hotbar.mixinconfigplugin;
 
+import net.neoforged.fml.loading.LoadingModList;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
@@ -20,12 +21,7 @@ public class AppleskinMixinConfigPlugin implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-        try {
-            Class.forName("squeek.appleskin.client.HUDOverlayHandler");
-            return true;
-        } catch (ClassNotFoundException e) {
-            return false;
-        }
+        return LoadingModList.get().getMods().stream().anyMatch(mod -> mod.getModId().equals("appleskin"));
     }
 
     @Override
